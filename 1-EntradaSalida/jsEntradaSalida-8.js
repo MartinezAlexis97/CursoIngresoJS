@@ -10,6 +10,6 @@ function SacarResto()
     num2=document.getElementById("numeroDivisor").value;
     num1=parseInt(num1)
     num2=parseInt(num2)
-    resultado=num1/num2
+    resultado=num1%num2
     alert("El resto es "+resultado)
 }
