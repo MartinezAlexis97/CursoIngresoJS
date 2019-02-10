@@ -3,13 +3,15 @@ transformarlos a enteros (parseInt),realizar la operación correcta y
 mostrar el resto entre el dividendo y el divisor.
 ej.: "El resto es 0 ."*/
 function SacarResto()
-{   var num1
-	var num2
+{
+    var uno
+    var dos
     var resultado
-    num1=document.getElementById("numeroDividendo").value;
-    num2=document.getElementById("numeroDivisor").value;
-    num1=parseInt(num1)
-    num2=parseInt(num2)
-    resultado=num1%num2
-    alert("El resto es "+resultado)
+    uno=document.getElementById("numeroDividendo").value;
+    dos=document.getElementById("numeroDivisor").value;
+    uno=parseInt(uno)
+    dos=parseInt(dos)
+    resultado=uno%dos
+    alert("El resto es " +resultado) 
+    
 }

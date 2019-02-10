@@ -3,50 +3,54 @@ transformarlos a enteros (parseInt),realizar la operación correcta y
 mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
-{	var num1
-    var num2
+{	
+    var uno
+    var dos
     var resultado
-    num1=document.getElementById("numeroUno").value;
-	num2=document.getElementById("numeroDos").value;
-    num1=parseInt(num1)
-    num2=parseInt(num2)
-    resultado=num1+num2
-    alert("La suma es "+resultado)
+    uno=document.getElementById("numeroUno").value;
+    dos=document.getElementById("numeroDos").value;
+    uno=parseInt(uno)
+    dos=parseInt(dos)
+    resultado=uno+dos
+    alert("La suma es " +resultado)
 }
 
 function restar()
-{   var num1
-    var num2
+{   
+    var uno
+    var dos
     var resultado
-    num1=document.getElementById("numeroUno").value;
-	num2=document.getElementById("numeroDos").value;
-    num1=parseInt(num1)
-    num2=parseInt(num2)
-    resultado=num1-num2
-	alert("La resta es "+resultado)
+    uno=document.getElementById("numeroUno").value;
+    dos=document.getElementById("numeroDos").value;
+    uno=parseInt(uno)
+    dos=parseInt(dos)
+    resultado=uno-dos
+    alert("La resta es " +resultado)
 }
 
 function multiplicar()
-{   var num1
-    var num2
+{   
+    var uno
+    var dos
     var resultado
-    num1=document.getElementById("numeroUno").value;
-	num2=document.getElementById("numeroDos").value;
-    num1=parseInt(num1)
-    num2=parseInt(num2)
-    resultado=num1*num2
-	alert("La multiplicacion es "+resultado)
+    uno=document.getElementById("numeroUno").value;
+    dos=document.getElementById("numeroDos").value;
+    uno=parseInt(uno)
+    dos=parseInt(dos)
+    resultado=uno*dos
+    alert("La multiplicación es " +resultado)
 }
 
 function dividir()
-{   var num1
-    var num2
+{   
+    var uno
+    var dos
     var resultado
-    num1=document.getElementById("numeroUno").value;
-	num2=document.getElementById("numeroDos").value;
-    num1=parseInt(num1)
-    num2=parseInt(num2)
-    resultado=num1/num2
-	alert("La division es "+resultado)
+    uno=document.getElementById("numeroUno").value;
+    dos=document.getElementById("numeroDos").value;
+    uno=parseInt(uno)
+    dos=parseInt(dos)
+    resultado=uno/dos
+    alert("La división es " +resultado)
 }
 
