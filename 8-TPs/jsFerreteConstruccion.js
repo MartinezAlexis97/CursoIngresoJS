@@ -34,7 +34,9 @@ function Materiales ()
     ancho=parseInt(document.getElementById("Ancho").value);
 
     
-    materiales=
-        alert(materiales)
+    materiales=largo*ancho
+
+        alert("Se necesitan " +materiales*2+ " bolsas de cemento y " +materiales*3+ " bolsas de cal")
+
 	
 }
