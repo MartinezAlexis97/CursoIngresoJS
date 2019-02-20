@@ -1,16 +1,20 @@
 function mostrar()
 {
-
+var cont=0;
 var sexo = prompt("ingrese f ó m .");
 
-    while(sexo!="f" || sexo!="m"){
+    while(sexo!="f" && sexo!="m"){
+        cont++
         alert("sexo incorrecto");
-        sexo = prompt("ingrese f ó m .");
 
-        if(sexo=="f" || sexo=="m"){
-            alert("sexo correcto");
+          if(cont==3){
+            alert("3 intentos fallidos, reintente luego")
             break;
+          }
+        sexo = prompt("ingrese f ó m .");
         }
+        if(sexo=="f" || sexo=="m"){
+          alert("sexo correcto");
+          document.getElementById('Sexo').value=sexo;
     }
-document.getElementById('Sexo').value=sexo;  
 }
