@@ -9,5 +9,20 @@ F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para
  */
 function ComenzarIngreso () 
 {
- 
+    var edad,sexo,estado,sueldo,legajo,nacionalidad;
+
+        edad=parseInt(prompt("Ingrese edad (entre 18 y 90 años)"));
+        sexo=prompt("Sexo: 'M' (masculino); 'F' (femenino)");
+        estado=prompt("Estado civil: '1'=soltero; '2'=casado; '3'=divorciado; '4'=viudo");
+        sueldo=parseInt(prompt("Ingrese sueldo bruto (no menor a 8.000)"));
+        legajo=parseInt(prompt("Ingrese número de legajo (4 cifras, sin ceros a la izq)"));
+        nacionalidad=prompt("Nacionalidad: 'A' (argentino); 'E' (extranjero); 'N' (nacionalizado)");
+        
+        console.log(edad);
+        document.getElementById("Edad").value=edad;
+        document.getElementById("Sexo").value=sexo;
+        document.getElementById("EstadoCivil").value=estado;
+        document.getElementById("Sueldo").value=sueldo;
+        document.getElementById("Legajo").value=legajo;
+        document.getElementById("Nacionalidad").value=nacionalidad;
 }

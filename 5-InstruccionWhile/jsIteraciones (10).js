@@ -4,7 +4,7 @@ function mostrar()
   var negativos=0;
   var num;
   var contadorN=0;
-  var contadorP
+  var contadorP=0
   var respuesta="si";
 
 	while(respuesta!="no"){
@@ -21,6 +21,6 @@ function mostrar()
           }
 
       }
-      alert("La suma de los negativos es "+negativos+ "\nLa suma de los positivos es " +positivos+ "\nLa cantidad de negativos es "+ contadorN);
+      alert("La suma de los negativos es "+negativos+ "\nLa cantidad de negativos es " +contadorN+ "\nLa suma de los positivos es " +positivos+ "\nLa cantidad de números positivos es " +contadorP);
 
 	}
