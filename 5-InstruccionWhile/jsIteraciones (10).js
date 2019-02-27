@@ -4,7 +4,10 @@ function mostrar()
   var negativos=0;
   var num;
   var contadorN=0;
-  var contadorP=0
+  var contadorP=0;
+  var par=0;
+  var promedioP
+  var promedioN
   var respuesta="si";
 
 	while(respuesta!="no"){
@@ -15,9 +18,19 @@ function mostrar()
         contadorN++
         negativos=negativos+num
 
+          if(num%2==0){
+            par++
+          }
       }else{
+
+        if(num>0){
             contadorP++
             positivos=positivos+num;
+
+            if(num%2==0){
+              par++
+            }
+        }
           }
 
       }

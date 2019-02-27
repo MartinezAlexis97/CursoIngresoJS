@@ -9,16 +9,32 @@ F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para
  */
 function ComenzarIngreso () 
 {
-    var edad,sexo,estado,sueldo,legajo,nacionalidad;
+    var edad=1,sexo="a",estado=5,sueldo=1,legajo=1,nacionalidad="b";
 
+        while(edad<18 || edad>90){
         edad=parseInt(prompt("Ingrese edad (entre 18 y 90 años)"));
+        }
+
+        while(sexo!="M" && sexo!="F"){
         sexo=prompt("Sexo: 'M' (masculino); 'F' (femenino)");
+        }
+
+        while(estado<1 || estado>4){
         estado=prompt("Estado civil: '1'=soltero; '2'=casado; '3'=divorciado; '4'=viudo");
+        }
+
+        while(sueldo<8000){
         sueldo=parseInt(prompt("Ingrese sueldo bruto (no menor a 8.000)"));
-        legajo=parseInt(prompt("Ingrese número de legajo (4 cifras, sin ceros a la izq)"));
-        nacionalidad=prompt("Nacionalidad: 'A' (argentino); 'E' (extranjero); 'N' (nacionalizado)");
+        }
         
-        console.log(edad);
+        while(legajo<0 || legajo>9999){
+        legajo=parseInt(prompt("Ingrese número de legajo (4 cifras, sin ceros a la izq)"));
+        }
+        
+        while(nacionalidad!="A" && nacionalidad!="E" && nacionalidad!="N"){
+            nacionalidad=prompt("Nacionalidad: 'A' (argentino); 'E' (extranjero); 'N' (nacionalizado)");
+        }
+        
         document.getElementById("Edad").value=edad;
         document.getElementById("Sexo").value=sexo;
         document.getElementById("EstadoCivil").value=estado;
