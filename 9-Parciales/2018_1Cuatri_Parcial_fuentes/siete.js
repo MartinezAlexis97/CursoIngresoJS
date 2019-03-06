@@ -1,6 +1,6 @@
 function mostrar()
 {
-    var notas,sexo,prom,notab,varones,cont=0,min,primera=true,acum=0,per;
+    var notas,sexo,prom,varones,cont=0,min,primera=true,acum=0,per,masc=0;
 
         
     while(cont<5){
@@ -12,6 +12,7 @@ function mostrar()
             notas=parseInt(prompt("Nota: (0/10)"));
         }
         sexo=prompt("sexo (f/m)");           //identificar sexo
+        console.log(sexo);
 
         while(sexo!="f" && sexo!="m"){
             alert("Sexo incorrecto. Ingrese 'f' (femenino) o 'm' (masculino)");
@@ -34,11 +35,15 @@ function mostrar()
             }
 
         }
+            if(notas>5 && notas<11 && sexo=="m"){
+                masc++
+
+            }
 
     
     }
         prom=acum/cont;
 
-        alert("El promedio de las notas totales es: "+prom+"\nLa nota mas baja fue:"+min+"\n"+per);
+        alert("El promedio de las notas totales es: "+prom+"\nLa nota mas baja fue:"+min+"de sexo: " +per+"\nCantidad de varones que sacaron 6 o mas: "+masc);
         
 }
